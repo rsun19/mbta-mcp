@@ -20,9 +20,15 @@
 }
 ```
 
-2. Run `uv sync`
+2. Get an API key from the MBTA, and put it in an `.env.local` file
 
-3. Now, your MCP server should be callable and should work correctly.
+```
+MBTA_API_KEY=<API_KEY>
+```
+
+3. Run `uv sync`
+
+4. Now, your MCP server should be callable and should work correctly.
 
 ## Development
 
