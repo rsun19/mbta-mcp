@@ -16,10 +16,8 @@ async def make_alerts_request(url: str) -> dict:
             response = await client.get(url, headers=headers, timeout=30)
             response.raise_for_status()
             data = response.json()
-            print(f"API Response: Found {len(data.get('data', []))} total alerts")
             return data
         except Exception as e:
-            print(f"Error making alerts request: {e}")
             return None
 
 def determine_active_alerts(start: str | None, end: str | None) -> bool:
