@@ -22,6 +22,8 @@
 
 2. Get an API key from the MBTA, and put it in an `.env.local` file
 
+Request link: https://www.mbta.com/developers/v3-api#key
+
 ```
 MBTA_API_KEY=<API_KEY>
 ```
